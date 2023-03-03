@@ -7,7 +7,7 @@ const util = require('util')
 const pool = mysql.createPool({
   host: process.env.DB_HOST || 'databaserampup.cmfd8deuhu77.us-east-1.rds.amazonaws.com',
   user: process.env.DB_USER || 'applicationuser',
-  password: process.env.DB_PASS || 'Mysql23!',
+  password: process.env.DB_PASS || 'Mysql123!',
   database: process.env.DB_NAME || 'movie_db'
 })
 pool.query = util.promisify(pool.query)
